@@ -16,7 +16,7 @@ you can open GitHub issues to ask for help or suggest improvements.
 First, add the Helm chart repository (provided through GitHub Pages with the help of [Chart Releaser](https://github.com/helm/chart-releaser)):
 
 ```
-helm repo add axon https://jdlabsco.github.io/axon-server-helm/repo
+helm repo add axon https://maverickdr.github.io/axon-server-helm/repo
 ```
 
 Then install the chart:
