@@ -1,0 +1,6 @@
+{{/*
+Rule: VR001 - Validate that the relicas count must be an odd number, or zero
+*/}}
+{{- if and (ne (mod .Values.replicaCount 2) 1) (ne (int .Values.replicaCount) 0) -}}
+{{- fail "Values validation failed (VR001): replicaCount must be an odd number, or zero." }}
+{{- end }}
