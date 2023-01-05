@@ -3,9 +3,9 @@ entries:
   axon-server:
   - apiVersion: v2
     appVersion: 4.3.5
-    created: "2023-01-05T15:38:15.664608+01:00"
+    created: "2023-01-05T15:50:29.131939+01:00"
     description: Zero-configuration message router and event store for Axon
-    digest: dbd1cdeb49da73fd86e68823610d56c30afa0f055bb176b8252dce6fd6e7c5c6
+    digest: 4b077e34af3178738f20bb86516eae8315375402de3a797f7aed5e51c108cdd8
     home: https://axoniq.io/product-overview/axon-server
     keywords:
     - axoniq
@@ -16,4 +16,4 @@ entries:
     urls:
     - https://github.com/graeyen/axon-server-helm/raw/main/releases/axon-server-0.0.2.tgz
     version: 0.0.2
-generated: "2023-01-05T15:38:15.663378+01:00"
+generated: "2023-01-05T15:50:29.130362+01:00"
