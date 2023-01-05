@@ -47,14 +47,16 @@ service:
   gui:
     type: LoadBalancer
     port: 8024
+    annotations:
+      service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: project=automotive,customer=renta_solutions,terraform=false,billingcode=CON-00005161,contractnumber=CON-00005161,accountnumber=ACC-0000012360,environmenttype=SHAREDSERVICES,stack=eks,servicelevel=MC,region=eu-central-1,CREATE_ALERT=true
+     
   grpc:
     type: ClusterIP
     port: 8124
 
 ingress:
   enabled: false
-  annotations:
-    alb.ingress.kubernetes.io/tags: project=automotive,customer=renta_solutions,terraform=false,billingcode=CON-00005161,contractnumber=CON-00005161,accountnumber=ACC-0000012360,environmenttype=SHAREDSERVICES,stack=eks,servicelevel=MC,region=eu-central-1,CREATE_ALERT=true
+  annotations: {}
     # kubernetes.io/ingress.class: nginx
     # nginx.ingress.kubernetes.io/affinity: cookie
     # nginx.ingress.kubernetes.io/affinity-mode: persistent
